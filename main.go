@@ -11,5 +11,7 @@ func HomeRouterHandler(w http.ResponseWriter, r *http.Request) {
 }
 func main(){
 	http.HandleFunc("/", HomeRouterHandler)
+	fmt.Println("Listen 8090")
 	http.ListenAndServe(":8090", nil)
+	fmt.Println("End")
 }
