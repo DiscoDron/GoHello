@@ -13,5 +13,7 @@ func main(){
 	http.HandleFunc("/", HomeRouterHandler)
 	fmt.Println("Listen 8090")
 	http.ListenAndServe(":8090", nil)
+	for{
+	}
 	fmt.Println("End")
 }
